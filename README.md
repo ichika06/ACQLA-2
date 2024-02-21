@@ -1,2 +1,2 @@
-# ACQLA-2
-Automated Comlab QrGenerator Laboratory Attendance - 2
+# ACQLA
+Automated Comlab QrGenerator Log &amp; Attendance

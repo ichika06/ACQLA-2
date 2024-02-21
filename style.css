@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+}
+
+body,html {
+    margin: 0;
+    top: 0;
+    overflow-y: hidden;
+
+}
+
+body {
+    background-color: #d6e2f6;
+    font-family: "Fredoka", sans-serif;
+}
+
+
+/*Header*/
+header {
+    margin-bottom: 10%;
+    
+}
+
+/* LOGBUTTON */
+
+
+#Log-btn {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    margin-left: 80%;
+    width: 10%;
+    border: none;
+    background: #c2d9ff;
+    box-shadow:  20px 20px 40px #afc3e6,
+             -20px -20px 40px #d5efff;
+    cursor: pointer;
+    transition: 200ms;
+    border-radius: 25px;
+    z-index: 99;
+}
+
+#Log-btn:hover {
+    transform: scale(1.2);
+    background: linear-gradient(to right, rgb(130, 99, 255), #fc5252);
+}
+
+/*tables*/
+
+
+.tables{
+    position: absolute;
+    top: 5%;
+
+}
+div[id^="r-"] {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    width: 100px;
+    height: 100px;
+}
+div[id^="tr-"]{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--Log Container--*/
+#Log-container {
+    position: absolute;
+    font-weight: 500;
+    top: 10%;
+    right: 25%;
+    transform: translate(0%, -0%);
+    background-color: white;
+    border: 5px solid rgb(111, 108, 246);
+    width: 50%;
+    height: 50%;
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+    border-radius: 10px;
+    background: linear-gradient(rgba(95, 101, 185, 0.5), rgba(165, 182, 228, 0.5));
+    backdrop-filter: blur(15px);
+    z-index: 98;
+}
+
+#Log-container.show{
+    display: block;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+
+    0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+}
+/*--Log Position--*/
+
+input {
+    margin: 10px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+label {
+    margin-left: 10px;
+}
+
+
+#adminbtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20px;
+    transition: 200ms;
+}
+#adminbtn a{
+    text-decoration: none;
+    color: red;
+}
+#adminbtn:hover {
+    scale: 1.2;
+}
+#selection {
+    position: absolute;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#prof-select,
+#course-select {
+    padding: 4px;
+    width: 160px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+}
+#prof-select option,
+#course-select option {
+    background-color: white;
+}
+
+#prof-select:hover,
+#course-select:hover {
+    background-color: #c2d9ff;
+}
+#button-rs{
+    position: absolute;
+    margin: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#submit,
+#clear_btn {
+    padding: 5px;
+    width: 100px;
+    font-family: "Fredoka", sans-serif;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+    transition: 200ms;
+}
+#submit:hover,
+#clear_btn:hover {
+    scale: 1.1;
+    color: white;
+    font-weight: bolder;
+    background: linear-gradient(to right, rgb(130, 99, 255), #fc5252);
+}
+
+span[id^="timestamp-"]{
+    font-size: small;
+    color: red;
+}
+p  {
+   font-size: small;
+   color: red;
+}
